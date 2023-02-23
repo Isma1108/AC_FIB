@@ -39,16 +39,16 @@ En cuanto al **espacio de memoria**:
 	
 	|32 bits|16 bits|8bits|
 	|-------|-------|-----|
-	|tt%eax|%ax|%ah, %al|
-	|tt%ebx|%bx|%bh, %bl|
-	|tt%ecx|%cx|%ch, %cl|
-	|tt%edx|%dx|%dh, %dl|
-	|tt%esi|%si|-|
-	|tt%edi|%di|-|
-	|tt%esp|%sp|-|
-	|tt%ebp|%bp|-|
-	|tt%eip|-|-|
-	|tt%eflags|-|-|
+	|%eax|%ax|%ah, %al|
+	|%ebx|%bx|%bh, %bl|
+	|%ecx|%cx|%ch, %cl|
+	|%edx|%dx|%dh, %dl|
+	|%esi|%si|-|
+	|%edi|%di|-|
+	|%esp|%sp|-|
+	|%ebp|%bp|-|
+	|%eip|-|-|
+	|%eflags|-|-|
 
 %eip es el registro donde hay el *Program Counter*, y en %eflags la palabra de estado, donde hay una serie de bits de estado que mas tarde se trataran. %esp y %ebp se tratan de los registros que almacenan el puntero a la cima de la pila (*Stack Pointer*) y el puntero al bloque de activación	(*Base Pointer*)
 
