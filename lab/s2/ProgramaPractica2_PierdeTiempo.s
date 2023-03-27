@@ -15,7 +15,7 @@ PierdeTiempo:
 .L5:
 	movl	-8(%ebp), %eax
 	cmpl	-4(%ebp), %eax
-	jne	.L4
+	je	.L4
 	movl	-4(%ebp), %eax
 	addl	%eax, -12(%ebp)
 .L4:
@@ -23,7 +23,7 @@ PierdeTiempo:
 .L3:
 	movl	-8(%ebp), %eax
 	cmpl	-4(%ebp), %eax
-	jle	.L5
+	jge	.L5
 	addl	$1, -4(%ebp)
 .L2:
 	movl	-4(%ebp), %eax
